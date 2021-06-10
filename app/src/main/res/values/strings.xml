@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Pandemic</string>
+    <string name="season0">Sezon 0</string>
+    <string name="addThreat">Dodaj zagrożenie</string>
+    <string name="craneProtocol">Protokół żuraw</string>
+    <string name="startButton">Start</string>
+    <string name="addInfection">Dodaj Infekcję</string>
+    <string name="add">dodaj</string>
+    <string name="divider">_________________________________________</string>
+
+    <string-array name="pandemic_0_cities_array">
+        <item>Tokio</item>
+        <item>Toronto</item>
+        <item>Stambuł</item>
+        <item>Algier</item>
+        <item>Praga</item>
+        <item>Londyn</item>
+        <item>Hanoi</item>
+        <item>Santiago</item>
+        <item>Pekin</item>
+        <item>Rzym</item>
+        <item>Rijad</item>
+        <item>Nowy Jork</item>
+        <item>Kalkuta</item>
+        <item>Sydney</item>
+        <item>Waszyngton</item>
+        <item>Sajgon</item>
+        <item>Sao Paulo</item>
+        <item>Osaka</item>
+        <item>Hawana</item>
+        <item>Leopoldville</item>
+        <item>Bombaj</item>
+        <item>Karaczi</item>
+        <item>Lagos</item>
+        <item>Buenos Aires</item>
+        <item>San Francisco</item>
+        <item>Bogota</item>
+        <item>Pjongjang</item>
+        <item>Atlanta</item>
+        <item>Chartum</item>
+        <item>Szanghaj</item>
+        <item>Kair</item>
+        <item>Bangkok</item>
+        <item>Meksyk</item>
+        <item>Warszawa</item>
+        <item>Johannesburg</item>
+        <item>Kijów</item>
+        <item>Bagdad</item>
+        <item>Madryt</item>
+        <item>Lima</item>
+        <item>Paryż</item>
+        <item>Los Angeles</item>
+        <item>Nowosybirsk</item>
+        <item>Moskwa</item>
+        <item>Manila</item>
+        <item>Leningrad</item>
+        <item>Berlin Wschodni</item>
+        <item>Dżakarta</item>
+        <item>Delhi</item>
+    </string-array>
+    43
+
+</resources>

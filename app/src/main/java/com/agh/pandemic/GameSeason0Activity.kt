@@ -22,6 +22,8 @@ class GameSeason0Activity : AppCompatActivity() {
     internal lateinit var piles: MutableList<MutableList<ThreatCart>>
     internal lateinit var allThreats: MutableList<String>
     internal lateinit var autoCompleteAdapter: ArrayAdapter<String>
+    internal var counterespionageUsed: Boolean = false
+    internal var forecastUsed: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -114,7 +116,9 @@ class GameSeason0Activity : AppCompatActivity() {
             addThreatTextView.hint = ""
 
             escalationButton.isEnabled = true
-            counterespionageButton.isEnabled = true
+            counterespionageButton.isEnabled = !counterespionageUsed
+            forecastButton.isEnabled = false
+            forecastUsed = true
         }
     }
 
@@ -126,7 +130,6 @@ class GameSeason0Activity : AppCompatActivity() {
         val currentEnableStatus = addThreatButton.isEnabled
         addThreatButton.setOnClickListener { removeCard(currentEnableStatus) }
         addThreatButton.isEnabled = true
-
     }
 
     private fun removeCard(state: Boolean) {
@@ -144,8 +147,8 @@ class GameSeason0Activity : AppCompatActivity() {
         addThreatButton.setOnClickListener { addThreat() }
         addThreatTextView.setText("")
         counterespionageButton.isEnabled = false
+        counterespionageUsed = true
         addThreatButton.isEnabled = state
-
         addThreatTextView.setAdapter(autoCompleteAdapter)
     }
 
@@ -156,7 +159,7 @@ class GameSeason0Activity : AppCompatActivity() {
         addThreatButton.isEnabled = true
         intensificationButton.isEnabled = false
         escalationButton.isEnabled = true
-        forecastButton.isEnabled = true
+        forecastButton.isEnabled = !forecastUsed
     }
 
     private fun startEscalation() {
@@ -165,6 +168,7 @@ class GameSeason0Activity : AppCompatActivity() {
         addThreatButton.setOnClickListener { addAgents() }
         escalationButton.isEnabled = false
         forecastButton.isEnabled = false
+        counterespionageButton.isEnabled = false
     }
 
     private fun addAgents() {
@@ -179,6 +183,7 @@ class GameSeason0Activity : AppCompatActivity() {
         addThreatTextView.setText("")
         recycler.adapter!!.notifyDataSetChanged()
         intensificationButton.isEnabled = true
+        counterespionageButton.isEnabled = !counterespionageUsed
     }
 
     private fun addThreat() {

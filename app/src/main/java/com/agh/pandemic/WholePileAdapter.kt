@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 class WholePileAdapter(var pile: List<List<ThreatCart>>): RecyclerView.Adapter<WholePileAdapter.ViewHolder>() {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val recycler: RecyclerView = view.findViewById(R.id.PilesRecyclerView)
-//        val divider: TextView = view.findViewById(R.id.divisionTextView)
     }
 
     private val viewPool = RecyclerView.RecycledViewPool()

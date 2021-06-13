@@ -4,7 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 
 
-class ThreatCart(val CityName :String, val infection :Boolean) : Parcelable{
+class ThreatCart(internal val cityName:String, val infection :Boolean) : Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString().toString(),
         parcel.readByte() != 0.toByte()
@@ -12,7 +12,7 @@ class ThreatCart(val CityName :String, val infection :Boolean) : Parcelable{
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeString(CityName)
+        parcel.writeString(cityName)
         parcel.writeByte(if (infection) 1 else 0)
     }
 
@@ -32,8 +32,12 @@ class ThreatCart(val CityName :String, val infection :Boolean) : Parcelable{
         return 0
     }
 
+    override fun equals(other: Any?): Boolean {
+        return (other is ThreatCart && cityName == other.cityName && infection == other.infection)
+    }
+
     override fun toString(): String {
-        var result = CityName
+        var result = cityName
         if (infection) {
             result = "Infekcja " + result
         }

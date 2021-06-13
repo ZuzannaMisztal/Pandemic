@@ -7,6 +7,13 @@
     <string name="addInfection">Dodaj Infekcję</string>
     <string name="add">dodaj</string>
     <string name="divider">_________________________________________</string>
+    <string name="Escalation">Eskalacja</string>
+    <string name="Intensification">Intensyfikacja</string>
+    <string name="addAgents">Dodaj Agentów</string>
+    <string name="endOfPile">______________________________</string>
+    <string name="counterespionage">kontrwywiad</string>
+    <string name="forecast">Prognoza</string>
+    <string name="deleteCard">Usuń kartę</string>
 
     <string-array name="pandemic_0_cities_array">
         <item>Tokio</item>

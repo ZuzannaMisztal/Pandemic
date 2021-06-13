@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pandemic">
-        <activity android:name=".GameSeason0Activity"></activity>
-        <activity android:name=".CraneActivity" />
+        <activity
+            android:name=".GameSeason0Activity"
+            android:parentActivityName=".Preparation0Activity"/>
+        <activity
+            android:name=".CraneActivity"
+            android:parentActivityName=".GameSeason0Activity" />
         <activity
             android:name=".Preparation0Activity"
             android:parentActivityName=".MainActivity" />

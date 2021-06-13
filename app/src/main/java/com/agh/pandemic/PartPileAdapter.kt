@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 class PartPileAdapter(var pile: List<ThreatCart>):
     RecyclerView.Adapter<PartPileAdapter.ViewHolder>() {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-//        val threatTextView: TextView = view.findViewById(R.id.threatTextView)
-        val addThreatButton: Button = view.findViewById(R.id.addSingleThreatButton)
+        val threatTextView: TextView = view.findViewById(R.id.singleThreatTextView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -22,12 +21,7 @@ class PartPileAdapter(var pile: List<ThreatCart>):
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val threat = pile.elementAt(position)
-        holder.addThreatButton.text = threat.toString()
-//        holder.addThreatButton.setOnClickListener { addThreat(threat) }
-    }
-
-    private fun addThreat(threat: ThreatCart) {
-        TODO("Not yet implemented")
+        holder.threatTextView.text = threat.toString()
     }
 
     override fun getItemCount(): Int {

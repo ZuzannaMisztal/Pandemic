@@ -5,13 +5,12 @@
     <string name="craneProtocol">Protokół żuraw</string>
     <string name="startButton">Start</string>
     <string name="addInfection">Dodaj Infekcję</string>
-    <string name="add">dodaj</string>
-    <string name="divider">_________________________________________</string>
+    <string name="add">Dodaj</string>
     <string name="Escalation">Eskalacja</string>
     <string name="Intensification">Intensyfikacja</string>
     <string name="addAgents">Dodaj Agentów</string>
-    <string name="endOfPile">______________________________</string>
-    <string name="counterespionage">kontrwywiad</string>
+    <string name="endOfPile">___________________________</string>
+    <string name="counterespionage">Kontrwywiad</string>
     <string name="forecast">Prognoza</string>
     <string name="deleteCard">Usuń kartę</string>
 
@@ -65,6 +64,6 @@
         <item>Dżakarta</item>
         <item>Delhi</item>
     </string-array>
-    43
+
 
 </resources>
